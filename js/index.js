@@ -46,10 +46,11 @@ window.onload = function() {
                 $("#contact-form")[0].reset();
                 $("#contact-form").addClass("d-none");
                 $("#success-msg").removeClass("d-none");
+		$('#loader').hide();
             }, function(error) {
                 console.log('FAILED...', error);
+		$('#loader').hide();
                 alert("Some error occured. Please re-sumbit the form.");
             });
-        $('#loader').hide();
     });
 };
