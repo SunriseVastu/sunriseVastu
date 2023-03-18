@@ -1,0 +1,192 @@
+html {
+	scroll-behavior: smooth;
+}
+
+/* Loader */
+#loader {
+    position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: 99;
+}
+
+/* Topbar */
+#Topbar a:hover {
+	color: #ff6f00 !important;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.5rem;
+}
+.navbar-brand img {
+	width: 50px;
+	margin-right: 0.5rem;
+	filter: drop-shadow(3px 2px 2px #ca2017);
+}
+.navbar-brand:hover {
+    color: #ff0000;
+}
+.navbar * {
+    color: #ff6f00;
+    -webkit-text-stroke: 1px #ff0000;
+    text-shadow: 1px #ff0000;
+}
+.nav-link {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+.nav-link:hover {
+    border-bottom: 1px solid #ca2017;
+}
+
+/* Scroll to Top */
+#topBtn {
+	font-size: 30px;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 10000;
+	color: #ca2017;
+	display: none;
+}
+#topBtn i {
+	background: #ffffff;
+	border-radius: 50%;
+}
+#topBtn i:hover {
+	opacity: .8;
+}
+
+/* Header */
+#header {
+	background: url("/images/vastushastra-bannner.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+#header-content {
+	padding: 5rem;
+	backdrop-filter: blur(10px);
+	text-align: center;
+}
+#header-content h1 {
+	font-family: 'Philosopher', sans-serif;
+	margin-bottom: 2rem;
+	color: #ff6f00;
+	-webkit-text-stroke: 1px #ff0000;
+	text-shadow: 0px 0px 5px #638253;
+}
+#header-content h5 {
+	font-family: 'Port Lligat Sans', sans-serif;
+	color: #ffffff;
+}
+
+/* Intro */
+.para {
+	color: #ff6f00;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 1.5rem;
+}
+
+/* Headings */
+#benefits h2, #about h2, #contact h2 {
+	text-align: center;
+	font-size: 3rem;
+	color: #ff6f00;
+	font-family: 'Philosopher', sans-serif;
+	margin-bottom: 2rem;
+}
+
+/* Contact */
+#contact .card {
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+#contact-form {
+	font-family: 'Port Lligat Sans', sans-serif;
+	font-size: 1.2rem;
+}
+div[id^='dvSocial'], #dvSocial1 {
+	height: 4rem;
+	margin: 0.5rem 0;
+	font-weight: bold;
+	font-family: 'Port Lligat Sans', sans-serif;
+	border-radius: var(--bs-border-radius);
+	background-color: #fcefde;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	text-decoration: none;
+}
+#socials a {
+	text-decoration: none;
+	color: #ca2017;
+}
+div[id^='dvSocial'] img {
+	width: 3rem;
+}
+div[id^='dvSocial']:hover {
+	background-color: #ffffff;
+	border: 2px solid #ca2017;
+	text-decoration: underline;
+}
+
+/* Footer */
+#footer {
+	background-color: #fcefde;
+	margin: 3rem 0 0;
+	text-align: center;
+	font-family: 'Philosopher', sans-serif;
+	color: #ff6f00;
+	-webkit-text-stroke: 1px #ff0000;
+	text-shadow: 0px 0px 5px #638253;
+}
+#footer a {
+	color: #ca2017;
+	text-shadow: none;
+	-webkit-text-stroke: transparent;
+	text-decoration: none;
+}
+#footer a:hover {
+	text-decoration: underline;
+	color: #ff0000;
+}
+#footer-min div {
+	color: #ffffff;
+	font-family: 'Port Lligat Sans', sans-serif;
+	font-weight: 500;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: space-between;
+}
+#dev {
+	color: #ff6f00;
+	font-weight: 600;
+}
+#dev:hover {
+	color: aqua;
+}
+
+/* Mobile View */
+@media only screen and (max-width: 600px) {
+    #topBtn {
+		font-size: 30px;
+		bottom: 9px;
+		right: 9px;
+	}
+
+	#header-content {
+		padding: 1rem;
+	}
+
+	#footer-min div {
+		display: block;
+		text-align: center;
+	}
+}
